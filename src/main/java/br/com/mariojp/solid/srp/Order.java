@@ -13,4 +13,11 @@ public class Order {
 	public List<Item> getItems() {
 		return items;
 	}
+
+	public double getSubtotal() {
+    return items.stream()
+            .mapToDouble(Item::getTotalPrice)
+            .sum();
+}
+
 }

@@ -25,6 +25,9 @@ public class Item {
 		return quantity;
 	}
 	
-	
+	public double getTotalPrice() {
+    return unitPrice * quantity;
+}
+
 	
 }
